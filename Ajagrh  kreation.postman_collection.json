@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "ce07aa6f-31ee-48c2-9293-564c321af770",
+		"name": "Ajagrh  kreation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26175102"
+	},
+	"item": [
+		{
+			"name": "Listing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Example Business\",\r\n  \"phone\": \"123-456-7890\",\r\n  \"city\": \"Example City\",\r\n  \"address\": \"123 Example St\",\r\n  \"images\": [\r\n    \"image1.jpg\",\r\n    \"image2.jpg\"\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"peter\",\r\n    \"password\":\"peter123\",\r\n    \"role\":\"BusinessOwner\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"peter\",\r\n    \"password\":\"peter123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all listings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZjNmJjZGI4NTYyM2QzMjk5ODVjZTIiLCJyb2xlIjoiQnVzaW5lc3NPd25lciIsImlhdCI6MTcxMTA0MTU0NCwiZXhwIjoxNzExMDQ1MTQ0fQ.CucPiEADjOoOX1LQuZQW-PzK6KsnV_BYViKygOPQDWo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update listing by id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZjNmJjZGI4NTYyM2QzMjk5ODVjZTIiLCJyb2xlIjoiQnVzaW5lc3NPd25lciIsImlhdCI6MTcxMTA0MTU0NCwiZXhwIjoxNzExMDQ1MTQ0fQ.CucPiEADjOoOX1LQuZQW-PzK6KsnV_BYViKygOPQDWo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/listings/65fc6c3db85623d329985ce6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"listings",
+						"65fc6c3db85623d329985ce6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete listing by id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWZjNmJjZGI4NTYyM2QzMjk5ODVjZTIiLCJyb2xlIjoiQnVzaW5lc3NPd25lciIsImlhdCI6MTcxMTA0MTU0NCwiZXhwIjoxNzExMDQ1MTQ0fQ.CucPiEADjOoOX1LQuZQW-PzK6KsnV_BYViKygOPQDWo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/listings/65fc6c3db85623d329985ce6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"listings",
+						"65fc6c3db85623d329985ce6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Review",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get review",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
